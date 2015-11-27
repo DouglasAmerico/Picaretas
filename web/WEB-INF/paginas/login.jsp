@@ -30,7 +30,8 @@
             <input type="submit" value="Entrar" />
         </form>
         <h1>Cadastro</h1>
-        <form name="form-cadastro" method="POST" action="Login" >
+        <form name="form-cadastro" method="POST" action="Login" onsubmit="return validarCadastro()" >
+            
             <input type="hidden" name="acao" value="cadastro" />
             <label>Apelido:</label>
             <input type="text" name="apelido" value="" />
