@@ -56,6 +56,37 @@
         }
         return true;
     }
+
+    function validaCadProd() {
+        var descricao = document.getElementById("descricao1").value;
+        var detalhes = document.getElementById("detalhes1").value;
+        var valor = document.getElementById("valor1").value;
+        var categoria = document.getElementById("categoria1").value;
+        if (!validarVazio(descricao)) {
+            alert('Campo descricao deve ser informado.')
+            return false;
+        }
+        if (!validarCampoMaior(descricao, 50)) {
+            alert('Campo descrição atingiu o limite de 50 caracteres.');
+            return false;
+        }
+        if (categoria < 1) {
+            alert('O campo categoria deve ser informado.');
+            return false;
+        }
+        if (!validarVazio(detalhes)) {
+            alert('Campo detalhes deve ser informado.')
+            return false;
+        }
+        if (!validarCampoMaior(detalhes, 1000)) {
+            alert('Campo detalhes atingiu o limite de 1000 caracteres.');
+            return false;
+        }
+        if (!validarVazio(valor)) {
+            alert('Campo valor deve ser informado.')
+            return false;
+        }
+    }
     
     function validarCadastroUsuario() {
         var apelido = document.getElementById('apelido2').value;
