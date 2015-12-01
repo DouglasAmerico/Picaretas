@@ -41,5 +41,6 @@
             <br />
             <input type="submit" value="Cadastrar" />
         </form>
+        <%@include file="/WEB-INF/includes/footer.jsp" %>
     </body>
 </html>

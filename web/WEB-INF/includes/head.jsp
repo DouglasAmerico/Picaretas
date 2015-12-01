@@ -5,6 +5,9 @@
 
 <meta charset="utf-8" />
 
+<link href="/Picaretas/css/bootstrap.min.css" rel="stylesheet" />
+<link href="/Picaretas/css/bootstrap-reponsive.min.css" rel="stylesheet"/>
+
 <style type="text/css">
     .erro {
         color: red;
